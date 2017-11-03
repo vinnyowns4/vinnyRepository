@@ -1,0 +1,163 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package kaartgame;
+import java.util.Scanner;
+
+/**
+ *
+ * @author gebruiker
+ */
+public class Kaartgame {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String y = ("Yes");
+        
+        
+        int Random = (int)Math.ceil(Math.random()*10);
+        int Random2 = (int)Math.ceil(Math.random()*10);
+        int Random3 = (int)Math.ceil(Math.random()*10);
+        int Random4 = (int)Math.ceil(Math.random()*10);
+        int Random5 = (int)Math.ceil(Math.random()*10);
+        int Random6 = (int)Math.ceil(Math.random()*10);
+        int Random7 = (int)Math.ceil(Math.random()*10);
+        int Random8 = (int)Math.ceil(Math.random()*10);
+        int Random9 = (int)Math.ceil(Math.random()*10);
+        int Random10 = (int)Math.ceil(Math.random()*10);
+        int firstcard = Random;
+        int secondcard = Random2;
+        int ptotalof123 = Random+Random2+Random3;
+        int ptotalof1234 = Random+Random2+Random3+Random4;
+        int ptotalof12345 = Random+Random2+Random3+Random4+Random5;
+        int btotalof123 = Random6+Random7+Random8;
+        int btotalof1234 = Random6+Random7+Random8+Random9;
+        int btotalof12345 = Random6+Random7+Random8+Random9+Random10;
+        int totaloffirstandsecond = firstcard+secondcard;
+        int banktotaloffirstandsecond = Random6+Random7;
+        System.out.println("Game begins");
+        System.out.println("player first card");
+        System.out.println(firstcard);
+        System.out.println("player second card");
+        System.out.println(secondcard);
+        System.out.println("player total amount after 2 cards");
+        System.out.println(totaloffirstandsecond);
+        System.out.println("Do you want another card?");
+         
+        if (sc.nextLine().equals (y)){
+                System.out.println("Player third card");
+                System.out.println(Random3);
+                System.out.println("Player total amount after 3 cards");
+                System.out.println(ptotalof123);
+    }
+    
+           else {
+                System.out.println("Bank first card");
+                System.out.println(Random6);
+                System.out.println("bank second card");
+                System.out.println(Random7);
+                System.out.println("bank total after 2 cards");
+                System.out.println(banktotaloffirstandsecond);
+ 
+                if (totaloffirstandsecond > banktotaloffirstandsecond){
+                    System.out.println("Player wins");
+                }
+                else {
+                    System.out.println("Bank wins");
+                }
+        
+        }
+    System.out.println("Do you want another card?");
+            if (sc.nextLine().equals (y)){
+                System.out.println("Player fourth card");
+                System.out.println(Random4);
+                System.out.println("Player total amount after 4 cards");
+                System.out.println(ptotalof1234); 
+            }
+                else {
+                        
+                        
+                System.out.println("Bank first card");
+                System.out.println(Random6);
+                System.out.println("bank second card");
+                System.out.println(Random7);
+                System.out.println("bank total after 2 cards");
+                System.out.println(banktotaloffirstandsecond);
+                System.out.println("bank third card");
+                System.out.println(Random8);
+                System.out.println("bank total after 3 cards");
+                System.out.println(btotalof123);
+                 
+                if (ptotalof123 > btotalof123){
+                    System.out.println("Player wins");
+                }
+                else {
+                    System.out.println("Bank wins");
+                }
+            
+            }
+    System.out.println("Do you want another card?");
+            if (sc.nextLine().equals (y)){
+                System.out.println("Player fifth card");
+                System.out.println(Random5);
+                System.out.println("Player total amount after 5 cards");
+                System.out.println(ptotalof12345);
+                
+    System.out.println("Bank first card");
+                System.out.println(Random6);
+                System.out.println("bank second card");
+                System.out.println(Random7);
+                System.out.println("bank total after 2 cards");
+                System.out.println(banktotaloffirstandsecond);
+                System.out.println("bank third card");
+                System.out.println(Random8);
+                System.out.println("bank total after 3 cards");
+                System.out.println(btotalof123);
+                System.out.println("bank total after 4 cards");
+                System.out.println(btotalof1234);
+                System.out.println("bank total after 5 cards");
+                System.out.println(btotalof12345);
+                
+                if (ptotalof12345 > btotalof12345) {
+                     System.out.println("player wins");
+                }
+                else {
+                    System.out.println("Bank wins");
+            }
+            }   
+            else {
+                        
+                        
+                System.out.println("Bank first card");
+                System.out.println(Random6);
+                System.out.println("bank second card");
+                System.out.println(Random7);
+                System.out.println("bank total after 2 cards");
+                System.out.println(banktotaloffirstandsecond);
+                System.out.println("bank third card");
+                System.out.println(Random8);
+                System.out.println("bank total after 3 cards");
+                System.out.println(btotalof123);
+                System.out.println("bank total after 4 cards");
+                System.out.println(btotalof1234);
+                 
+                if (ptotalof1234 > btotalof1234){
+                    System.out.println("Player wins");
+                }
+                else {
+                    System.out.println("Bank wins");
+                }
+            
+    
+    }
+              
+                
+   
+    }
+    }
+ 
